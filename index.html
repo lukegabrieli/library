@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1>Luke's Library</h1>
+<p>Please open the console and use the instructions below to model a library. You can create books and either add or remove them from shelves. You can also create shelves and either add or remove them from the library.</p>
+<p><span class="bold">Black Text</span> = do not change!</p>
+<p><span class="red bold">Red Text</span> = change to whatever you want!</p>
+<ol>
+  <li><span class="bold">To create a new shelf:</span> var <span class="red">shelfname</span> = new Shelf ("<span class="red">Name</span>");</li>
+  <li><span class="bold">To create a new book:</span> var <span class="red">bookname</span> = new Book ("<span class="red">Title</span>", "<span class="red">Author</span>");</li>
+  <li><span class="bold">To add a shelf to the library:</span> library.addShelf(<span class="red">shelfname</span>);</li>
+  <li><span class="bold">To add a book to a shelf:</span> <span class="red">shelfname</span>.addBook(<span class="red">bookname</span>);
+  <li><span class="bold">To remove a shelf from the library:</span> library.removeShelf(<span class="red">shelfname</span>);</li>
+  <li><span class="bold">To remove a book from a shelf:</span> <span class="red">shelfname</span>.removeBook(<span class="red">bookname</span>);</li>
+  <li><span class="bold">To show all shelves in the library:</span> library.showShelves();</li>
+  <li><span class="bold">To show all books on a shelf:</span> <span class="red">shelfname</span>.showBooks();</li>
+</ol>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="book.js"></script>
+  <script src="shelf.js"></script>
+  <script src="library.js"></script>
+
+</body>
+</html>
